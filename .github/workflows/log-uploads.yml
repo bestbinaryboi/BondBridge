@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'Uploads/**'
+   
+permissions:
+  contents: write
 
 jobs:
   log-folders:
