@@ -1,0 +1,37 @@
+name: Log Upload Folders
+
+on:
+  push:
+    paths:
+      - 'Uploads/**'
+
+jobs:
+  log-folders:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Get folder names and append to uploaded.txt
+        run: |
+          # Make sure uploaded.txt exists
+          touch uploaded.txt
+
+          # Get unique top-level folders inside Uploads
+          find Uploads -mindepth 1 -maxdepth 1 -type d -printf "%f\n" | sort -u > current_folders.txt
+
+          # Append only folders not already listed
+          while read folder; do
+            if ! grep -Fxq "$folder" uploaded.txt; then
+              echo "$folder" >> uploaded.txt
+            fi
+          done < current_folders.txt
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add uploaded.txt
+          git commit -m "Update uploaded.txt with new Uploads folders" || echo "No changes"
+          git push
