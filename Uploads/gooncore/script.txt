@@ -1,0 +1,1 @@
+gooncore,//gooncore made with glue3d text editor|terminal.print(str goonء val color) |,
