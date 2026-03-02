@@ -4,4 +4,5 @@ cat
 test
 push-fall
 penis
-bb_funcperson
+bb_func
+person
