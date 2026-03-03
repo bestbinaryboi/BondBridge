@@ -10,6 +10,8 @@ Hello devs! If you are here to add to the BondBridge library, go to the Uploads 
   <sub>"textures.txt" works too but it has not been tested.</sub>
 ## IMPORTANT
 DO **NOT** ADD YOUR ASSETS NAME TO UPLOADED.TXT. IT IS THERE FOR INTERNAL SEARCH INDEXING AND YOUR PULL REQUEST WILL BE REJECTED IF YOU TRY TO CHANGE IT.
+### Extras!
+There is a video tutorial avaliable in the [Glue3D.net discord](https://discord.com/channels/1468302390963867662/1476017282424504451)
 
 anyways, thats it! **Happy glueing!**
 
