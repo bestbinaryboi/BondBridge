@@ -2,5 +2,17 @@
 BondBridge is an integrated asset library for Glue3D.
 
 
-Hello devs! If you are here to add to the BondBridge library, go to the Uploads folder and submit a pull request for a folder. 
-This folder should be titled with your assets name, have a asset.txt or asset.glue3d file in it, and an optional DESC.txt
+Hello devs! If you are here to add to the BondBridge library, go to the Uploads folder and submit a pull request for a folder. This folder should be:
+
+- Named with your asset's name in ALL LOWERCASE
+- A DESC.txt file with your description, again ALL LOWERCASE. (Tip! you can use [] to add links to other pages! ex:[ball] would make a link to the ball page)
+- Have a file with the asset information that is named "script.txt","model.txt" or "bone.txt" based on the file type of your asset.
+  <sub>"textures.txt" works too but it has not been tested.</sub>
+## IMPORTANT
+DO **NOT** ADD YOUR ASSETS NAME TO UPLOADED.TXT. IT IS THERE FOR INTERNAL SEARCH INDEXING AND YOUR PULL REQUEST WILL BE REJECTED IF YOU TRY TO CHANGE IT.
+
+anyways, thats it! **Happy glueing!**
+
+
+
+
